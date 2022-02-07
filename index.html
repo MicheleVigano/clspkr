@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>route21Spinnaker</title>
+   <link rel="icon" href="logo.ico">
+  
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+  h1 {
+  color: black;
+  font-family: verdana;
+  font-size: 300%;
+}
+  
+p {
+  color: #333333;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 160%;
+}
+  
+  
+body {
+  font-family: Arial;
+  padding: 10px;
+  /*background: #f1f1f1;*/
+  background-image: url(route-set.jpg);
+  /* Full height */
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+  /* Center and scale the image nicely */
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+  
+  
+
+  .bg-image {
+  /* The image used */
+  background-image: url(erba-nuv-pa.jpg);
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+  
+/* Header/Blog Title */
+/*.header {
+  padding: 30px;
+  text-align: center;
+ background-image: url(ema-grign.jpg);*/
+   /* Full height */
+  /*height: 100%; */
+  /* Center and scale the image nicely */
+ /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+  
+  
+  .leftimg{
+    background-image: url(idea.jpg);
+  width: 100%;
+  padding: 20px;
+    /*text*/
+    text-align: left;
+    font-family:"Arial Black", Gadget, sans-serif;
+    color: white;
+     /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  
+  .leftimg1{
+  background-image: url(sky-sunset.jpg);
+  width: 100%;
+  padding: 20px;
+    /*text*/
+    text-align: left;
+    font-family: Georgia, serif;
+    color: white;
+     /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+    
+  
+  .rightimg{
+  background-image: url(sky-sunset.jpg);
+  width: 100%;
+  padding: 20px;
+    /*text*/
+    text-align: left;
+    font-family: Georgia, serif;
+    color: white;
+     /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  
+  
+ /* .header p{
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  
+.header h1 {
+  font-size: 50px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}*/
+
+  
+/* Style the top navigation bar */
+.topnav {
+  margin-top: 300px;
+   border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  border-radius: 10px;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #8c8c8c;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+  
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  /* background-color: #f1f1f1; */
+  padding-left: 20px;
+}
+
+	
+  .obbligatori li h3{
+	color: #cc0000;
+	}
+	
+	
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+  
+/* Add a card effect for articles */
+.card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 17px;
+}
+
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  
+/* Footer */
+.footer {
+  margin-top: 50px;
+   border-radius: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+  
+/* Style the topnav links */
+.footer a {
+  float: left;
+  border-radius: 10px;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.footer a:hover {
+  background-color: #8c8c8c;
+  color: black;
+}
+  
+  
+.w3-btn, .w3-btn:link, .w3-btn:visited {
+    color: #FFFFFF;
+    background-color: #4CAF50;
+}
+  .w3-example .w3-btn, .w3-example .ws-btn {
+    background-color: #04AA6D!important;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+}
+
+  
+   .icon {
+        background: url("logo.ico");
+      height: 20px;
+        width: 20px;
+        display: block;
+    }
+  
+  
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.body{
+    background-color: yellow;}
+}  
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+<!--<div class="bg-image"></div> -->
+
+<div class="bg-text">
+  <h3>Clan Spinnaker</h3>
+  <h1 style="font-size:50px">ROUTE LAGORAI</h1>
+  <p>. -chilling ai laghetti- .</p>
+</div>
+
+<!-- <div class="header"> 
+  <h1>MICHELE VIGANO'</h1>
+  <p>sito in temporanea cessione al gruppo scout cernusco 1</p>
+</div> -->
+
+<div class="topnav">
+  <a href="#date">DATE</a>
+  <a href="#mappa">MAPPA</a>
+  <a href="#cibo">CIBO</a>
+  <a href="#infovarie">DA PORTARE</a>
+  <a href="#trasporti">TRASPORTI</a>
+  <a href="#costi">COSTI</a>
+  <a href="/easter-egg.html" style="float:right; font-family:Copperplate,fantasy; background-color: rgb(0, 0, 0); color:blueviolet;"><i style="color:blueviolet;"></i>Cl.Spkr</a>
+</div>
+
+   <section id="top">
+<div class="row">
+   <div class="card">
+     <h1>Hola amigoos!</h1>
+     <t>La route si sta avvicinando sempre di più, di conseguenza abbiamo un po' di cose da rammentarvi, non perdetevele!</t>
+ 
+  </div>
+</div>
+    </section>
+  
+  <section id="date">
+   <div class="row">
+
+    <div class="card">
+       <h1>Date</h1>
+     <h3> </h3>
+     <h4>tamponi salivari: --> Sabato 31 luglio ore 08.30 AM</h4>
+     <t>ci troviamo in sede per effettuarvi i tamponi salivari (Ci troviamo presto poichè il tampone effettuato di mattina, a digiuno, appena svegli è il miglior modo per ottenere il risultato più autentico possibile. Dunque dovrete venire in sede senza aver ne mangiato, ne esservi lavati i denti (meno male che avremo le mascherine!))</t>
+     <h3></h3>
+     <t>-</t>
+     <h3></h3>
+     <h4>partenza: --> Domenica 1 agosto ore 07.15 AM</h4>
+     <t>Partiremo dalla stazione di Pioltello-Limito. </t>
+     <h3></h3>
+     <t>-</t>
+     <h3></h3>
+     <h4>arrivo: --> Sabato 7 agosto ore 19.50 AM</h4>
+     <h3></h3>
+     <t>Il ritorno sarà sempre a Limito. </t>
+   
+    </div>
+    </section>
+  
+    
+    <section id="mappa">
+   <div class="row">
+
+    <div class="card">
+       <h1>Mappa </h1>
+     <t>partenza: AGRITURISMO RINCHER</t>
+     <h3></h3>
+     <t>arrivo: ZIANO DI FIEMME</t>
+     <h3></h3>
+      <div>
+    <iframe width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/it/map/route2021clanspinnaker_634499?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+      
+        <p><a href="//umap.openstreetmap.fr/it/map/route2021clanspinnaker_634499">guarda meglio</a></p>
+  </div>
+ 
+    </div>
+  
+
+    </section>
+  
+   <section id="cibo">
+<div class="row">
+ <div class="card">
+ 
+     <h1>cibo</h1>
+     <h4>NUM_PASTI: 13 + COLAZIONI: 6</h4>
+     <t>1: --> ci hanno donato un sacco di buste di riso liofilizzato, se ne avete bisogno scriveteci che ve le portiamo :) non sprechiamo sono buone e gustose, ma soprattutto GRATIS    </t>
+ <h3></h3>
+     <t>2: --> abbiamo la possibilità di fare rifornimento cibo a metà route, dunque chiedete ai vostri genitori o amici o conoscenti se qualcuno ha voglia di farsi un viaggetto per portarci su il nostro prezioso cibo! Se no ce lo porteremo in spalla tutto e diventeremo ancora più forti!🚘🚗🚖</t>
+  </div>
+</div>
+    </section>
+
+       
+    </section>
+     <section id="infovarie">
+<div class="row">
+    <div class="card">
+ 
+     <h1>DA PORTARE </h1>
+     <h3 style="color: #cc0000;">OBBLIGATORI:</h3>
+      <ul class="obbligatori" id="myUL">
+	      
+	 
+        <li style="color: #cc0000;">3L minimo di acqua!!!!</li>
+        <li style="color: #cc0000;">cambio per 7 giorni di mascherine</li>
+        <li style="color: #cc0000;">costume</li>
+        <li style="color: #cc0000;">tenda personale</li>
+        <li style="color: #cc0000;">cibo</li>
+        <li style="color: #cc0000;">PDS: dovrete condividerli</li>
+        <li style="color: #cc0000;">quota </li>
+        <li style="color: #cc0000;">scarponi buoni</li>
+        
+</ul>
+	    <h3>consigliati caldamente:</h3>
+ <ul id="myUL">
+	      
+	   <li>2 magliette tecniche (tessuto traspirante)</li>
+        <li>1 maglietta comoda per la notte</li>
+        <li>2 paia di pantaloncini</li>
+        <li>4 mutande (tanto si lavano)</li>
+        <li>4 paia di calze (di cui uno pesante per camminare ed evitare le vesciche)</li>
+        <li>1 pile in microfibra</li>
+        <li>1 maglia termica</li>
+        <li>beauty </li>
+        <li> rotolo di carta igenica</li>
+        <li>fornellino gavetta e posate accendino</li>
+        <li> ciabatte/scarpe leggere/sandali </li>
+        <li>torcia sacco a pelo e stuoino</li>
+        <li>giacca a vento (se piumino meglio</li>
+        <li>1 mini astuccio e due o tre fogli</li>
+       
+      </ul>
+      
+
+
+
+
+
+
+<script>
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }</script>
+
+
+
+  </div>
+</div>
+    </section>
+  
+  
+     <section id="trasporti">
+<div class="row">
+    <div class="card">
+ 
+     <h1>Trasporti </h1>
+     <h3>Andata:</h3>
+     <t>Treno :: Pioltello-Limito --> Trento</t>
+     <h3></h3>
+     <t>Bus :: Trento --> AGRITURISMO RINCHER</t>
+     <h3>Ritorno:</h3>
+     <t>Bus :: ZIANO DI FIEMME --> Trento</t>
+     <h3></h3>
+     <t>Treno :: Trento --> Pioltello-Limito </t>
+  </div>
+</div>
+       
+       
+       
+     <section id="costi">
+<div class="row">
+    <div class="card">
+ 
+     <h1>Costi </h1>
+     <t>la quota della route è di 90 euro. Ricordate ai vostri genitori di fare un bonifico di 70 euro e poi portate i 20 euro restanti il giorno della partenza</t>
+     <!--<h3></h3>
+     <t>Treno 1  ::--xxx$</t>
+     <h3></h3>
+     <t>Bus 1  ::--xxx$</t>
+     <h3></h3>
+     <h3></h3>
+     <t>Treno 2  ::--xxx$</t>
+     <h3></h3>
+     <t>Bus 2  ::->xxx$</t>
+     <h3></h3>-->
+ 
+  </div>
+</div>
+       
+       
+<div class="footer">
+  <a href="/Chi-sono.html" style="border-left:50%;">- By Michele Viganò -</a> 
+  <a href="/easter-egg.html" style="float:right; font-family:Copperplate,fantasy; background-color: rgb(0, 0, 0); color:blueviolet;"><i style="color:blueviolet;"></i>Cl.Spkr</a>
+</div>
+
+</body>
+</html>
